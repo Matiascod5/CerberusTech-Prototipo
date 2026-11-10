@@ -9,7 +9,7 @@ Versión web del prototipo de alta fidelidad diseñado en Figma (archivo «CERBE
 
 ## Uso
 
-- `index.html` presenta los cinco actores: paciente, personal de mesón y admisión, profesional de la salud, jefatura de agenda y contact center, y administración del sistema.
+- `index.html` presenta los seis actores: paciente, paciente (tótem de atención), personal de mesón y admisión, profesional de la salud, jefatura de agenda y contact center, y administración del sistema.
 - «Ver su flujo» abre la página del actor (`actores/`), con sus recorridos y los pasos de cada uno en orden. «Comenzar» abre la primera pantalla.
 - La barra superior de cada pantalla muestra el actor, el recorrido y el paso. El nombre del actor lleva de vuelta a su flujo.
 - **Atrás** (o la tecla Retroceso) vuelve a la pantalla anterior. Las flechas de la derecha (o las teclas ← y →) pasan al paso anterior o siguiente del recorrido.
@@ -25,7 +25,7 @@ Cada actor recorre solo sus propias pantallas. El personal de la Red ingresa por
 
 ## Tótem de autoadmisión
 
-Las pantallas TT0 a TT7 forman parte del flujo del paciente y siguen el requerimiento RF-C2-10, el caso de uso 3.4.2.12, la regla RN-IDE-07 y los supuestos S-04, S-17 y S-59 del Subdocumento 3: confirmación de la llegada con la cédula, ingreso con RUN y huella para quien la registró en el mesón, derivación al mesón cuando no hay hora, hay copago o falla la lectura, y funcionamiento sin conexión solo con cédula. Los botones de letra grande, alto contraste y guía por voz funcionan en el navegador.
+Las pantallas TT0 a TT7 forman el flujo del actor «Paciente (tótem de atención)» y siguen el requerimiento RF-C2-10, el caso de uso 3.4.2.12, la regla RN-IDE-07 y los supuestos S-04, S-17 y S-59 del Subdocumento 3: confirmación de la llegada con la cédula, ingreso con RUN y huella para quien la registró en el mesón, derivación al mesón cuando no hay hora, hay copago o falla la lectura, y funcionamiento sin conexión solo con cédula. Los botones de letra grande, alto contraste y guía por voz funcionan en el navegador.
 
 ## Estilo visual
 

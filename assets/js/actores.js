@@ -363,7 +363,13 @@ window.CT_DATOS = {
      "pantallas": [
       "00m-portal-publico-telefono-375-812.html"
      ]
-    },
+    }
+   ]
+  },
+  {
+   "id": "paciente-totem",
+   "nombre": "Paciente (tótem de atención)",
+   "recorridos": [
     {
      "nombre": "Autoadmisión en el tótem",
      "pantallas": [
@@ -374,7 +380,7 @@ window.CT_DATOS = {
      ]
     },
     {
-     "nombre": "Tótem sin cédula, derivación al mesón y sin conexión",
+     "nombre": "Sin cédula, derivación al mesón y sin conexión",
      "pantallas": [
       "tt4-totem-ingresar-run-sin-cedula.html",
       "tt5-totem-confirmar-identidad-con-huella.html",
