@@ -103,11 +103,13 @@ body.proto { background: #ebe7f2; overflow: hidden; }
 .hs { cursor: pointer; transition: filter .15s; }
 .hs:focus { outline: none; }
 .hs:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; }
+/* El resaltado no reemplaza el fondo del botón: solo agrega un contorno y un velo azul muy suave,
+   así el texto mantiene su contraste (por ejemplo, texto blanco sobre morado). */
 body.show-hs .hs, body.flash-hs .hs {
-  outline: 2px solid rgba(47, 111, 237, .9); outline-offset: -1px;
-  background-image: linear-gradient(rgba(47, 111, 237, .12), rgba(47, 111, 237, .12));
+  outline: 3px solid rgba(47, 111, 237, .95); outline-offset: 2px;
+  box-shadow: inset 0 0 0 2000px rgba(47, 111, 237, .08) !important;
 }
-body.show-hs .sv.hs, body.flash-hs .sv.hs { background-image: none; background-color: rgba(47, 111, 237, .12); }
+body.show-hs .tt-pri.hs, body.flash-hs .tt-pri.hs { box-shadow: none !important; }
 
 @media (max-width: 1000px) { .pb-flow { display: none; } .pb-actor { max-width: 170px; } }
 @media (max-width: 760px) {
