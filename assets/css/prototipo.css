@@ -373,3 +373,22 @@ body.idx { background: #fff; font-size: 17px; line-height: 1.55; }
 .tt-tog { padding: 0 16px; gap: 10px; font-size: .66em; }
 .tt-tog .tt-ic { width: 34px; height: 34px; }
 .tt-lang button { padding: 0 16px; font-size: .66em; }
+
+/* Guía de uso del índice */
+.idx section > p.negro, .idx .intro { color: var(--tinta); }
+.guia { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 14px; margin: 22px 0 6px; }
+.guia-item { display: flex; align-items: flex-start; gap: 18px; padding: 18px 20px; background: var(--fondo); border: 1px solid var(--borde); border-radius: 16px; }
+.guia-item p { margin: 0; font-size: 15px; color: var(--tinta); line-height: 1.5; }
+.guia-item strong { display: block; margin-bottom: 2px; font-size: 16px; }
+.btn.demo { flex: none; width: 140px; height: 40px; font-size: 15px; pointer-events: none; cursor: default; }
+.btn.demo.sm { width: auto; height: 30px; padding: 0 12px; font-size: 14px; border-radius: 8px; vertical-align: middle; box-shadow: none; }
+.how div { color: var(--tinta); }
+.how .mini {
+  display: inline-flex; align-items: center; justify-content: center; height: 30px; min-width: 30px; padding: 0 10px; margin-bottom: 10px;
+  border-radius: 8px; border: 1px solid var(--borde); background: #fff; font-size: 14px; font-weight: 700; color: var(--tinta);
+}
+.how .mini.back { background: var(--morado); border-color: var(--morado); color: #fff; }
+.how .mini.on { background: var(--morado-claro); border-color: #d6c6ee; color: var(--morado); }
+.how strong { margin-top: 2px; }
+@media (max-width: 600px) { .guia-item { flex-direction: column; } }
+.idx .lead, .actor p.actor-b { color: var(--tinta); }
