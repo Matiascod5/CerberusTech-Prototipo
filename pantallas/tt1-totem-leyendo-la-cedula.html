@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TT1 · Tótem: leyendo la cédula — Prototipo Red Ñielol · Cerberus Tech</title>
+<link rel="stylesheet" href="../assets/css/prototipo.css">
+<style></style>
+</head>
+<body class="proto" data-w="1080" data-h="1920" data-file="tt1-totem-leyendo-la-cedula.html" data-timeout="2500" data-timeout-go="tt2-totem-confirmar-la-hora-del-dia.html">
+<header class="pbar">
+  <button class="pb-btn back" type="button" data-ui="back" title="Volver a la pantalla anterior (tecla Retroceso)"><span aria-hidden="true">&#8592;</span> Atrás</button>
+  <a class="pb-actor" href="../index.html" data-ui="actor" title="Volver a los recorridos del actor">Índice</a>
+  <div class="pb-title">
+    <span class="pb-screen"><strong>TT1</strong> Tótem: leyendo la cédula</span>
+    <span class="pb-flow" data-ui="flow"></span>
+  </div>
+  <div class="pb-tools">
+    <button class="pb-btn txt" type="button" data-ui="hotspots" aria-pressed="false" title="Resaltar las zonas en las que se puede hacer clic (tecla H)">Zonas clicables</button>
+    <button class="pb-btn txt" type="button" data-ui="fit" aria-pressed="true" title="Alternar entre ajustar a la ventana y tamaño real (tecla F)">Ajustar</button>
+    <a class="pb-btn" data-ui="prev" title="Paso anterior del recorrido (tecla ←)" aria-label="Paso anterior del recorrido">&#8249;</a>
+    <span class="pb-step" data-ui="step"></span>
+    <a class="pb-btn" data-ui="next" title="Paso siguiente del recorrido (tecla →)" aria-label="Paso siguiente del recorrido">&#8250;</a>
+  </div>
+</header>
+<main class="stage">
+  <div class="screen" style="width:1080px;height:1920px">
+<div class="tt " style="width:1080px;height:1920px"><header class="tt-head">
+  <div class="tt-brand"><img src="../assets/svg/i-62880b859ef5.svg" width="64" height="64" alt=""><div><strong>Red de Salud Ñielol</strong><span>Temuco Centro · Autoadmisión</span></div></div>
+  <div class="tt-hora"><svg class="tt-ic " width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>08:12</span></div>
+</header>
+<div class="tt-a11y" role="toolbar" aria-label="Accesibilidad e idioma">
+  <button type="button" class="tt-tog" data-tt="letra" aria-pressed="false"><svg class="tt-ic " width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18L8 6l5 12M5 14h6M15 18l3-8 3 8M16 15.5h4"/></svg><span>Letra grande</span></button>
+  <button type="button" class="tt-tog" data-tt="contraste" aria-pressed="false"><svg class="tt-ic " width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v18a9 9 0 0 0 0-18z" fill="currentColor"/></svg><span>Alto contraste</span></button>
+  <button type="button" class="tt-tog" data-tt="voz" aria-pressed="false"><svg class="tt-ic " width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg><span>Guía por voz</span></button>
+  <div class="tt-lang" role="group" aria-label="Idioma"><button type="button" class="on" data-tt-lang="es" aria-pressed="true">Castellano</button><button type="button" data-tt-lang="arn" aria-pressed="false">Mapudungun</button></div>
+</div>
+<main class="tt-main tt-center">
+  <ol class="tt-pasos" aria-label="Pasos"><li class="cur"><span>1</span>Cédula</li><li class=""><span>2</span>Confirmar hora</li><li class=""><span>3</span>Comprobante</li></ol>
+  <div class="tt-spin" aria-hidden="true"><div></div><svg class="tt-ic " width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 16c.6-1.3 1.7-2 3-2s2.4.7 3 2M14 10h4M14 13h3"/></svg></div>
+  <h1 data-voz>Leyendo su cédula…</h1>
+  <p class="tt-lead" data-voz>No retire la cédula del lector hasta que la pantalla cambie.</p>
+  <div class="tt-barra"><div></div></div>
+  <p class="tt-nota"><svg class="tt-ic " width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg><span>La lectura solo se usa para encontrar su hora de hoy en este centro.</span></p>
+</main><footer class="tt-foot"><svg class="tt-ic " width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="3.2"/><path d="M5 21v-1a7 7 0 0 1 14 0v1"/></svg><p><strong>¿Prefiere que lo atienda una persona?</strong><br>El mesón de admisión está siempre disponible.</p></footer></div>
+  </div>
+</main>
+<script src="../assets/js/actores.js"></script>
+<script src="../assets/js/prototipo.js"></script>
+<script src="../assets/js/totem.js"></script>
+</body>
+</html>

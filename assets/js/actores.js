@@ -13,6 +13,14 @@ window.CT_DATOS = {
    "c": "A2",
    "t": "Segundo factor"
   },
+  "a1p-inicio-de-sesion-personal-de-la-red.html": {
+   "c": "A1p",
+   "t": "Inicio de sesión: personal de la Red"
+  },
+  "a2p-segundo-factor-personal-de-la-red.html": {
+   "c": "A2p",
+   "t": "Segundo factor: personal de la Red"
+  },
   "b0-inicio-paciente.html": {
    "c": "B0",
    "t": "Inicio paciente"
@@ -264,6 +272,38 @@ window.CT_DATOS = {
   "a3-box-compartido-tarjeta-y-pin.html": {
    "c": "A3",
    "t": "Box compartido: tarjeta y PIN"
+  },
+  "tt0-totem-bienvenida-y-lectura-de-cedula.html": {
+   "c": "TT0",
+   "t": "Tótem: bienvenida y lectura de cédula"
+  },
+  "tt1-totem-leyendo-la-cedula.html": {
+   "c": "TT1",
+   "t": "Tótem: leyendo la cédula"
+  },
+  "tt2-totem-confirmar-la-hora-del-dia.html": {
+   "c": "TT2",
+   "t": "Tótem: confirmar la hora del día"
+  },
+  "tt3-totem-llegada-confirmada-y-comprobante.html": {
+   "c": "TT3",
+   "t": "Tótem: llegada confirmada y comprobante"
+  },
+  "tt4-totem-ingresar-run-sin-cedula.html": {
+   "c": "TT4",
+   "t": "Tótem: ingresar RUN sin cédula"
+  },
+  "tt5-totem-confirmar-identidad-con-huella.html": {
+   "c": "TT5",
+   "t": "Tótem: confirmar identidad con huella"
+  },
+  "tt6-totem-pase-al-meson.html": {
+   "c": "TT6",
+   "t": "Tótem: pase al mesón"
+  },
+  "tt7-totem-funcionamiento-sin-conexion.html": {
+   "c": "TT7",
+   "t": "Tótem: funcionamiento sin conexión"
   }
  },
  "actores": [
@@ -323,6 +363,24 @@ window.CT_DATOS = {
      "pantallas": [
       "00m-portal-publico-telefono-375-812.html"
      ]
+    },
+    {
+     "nombre": "Autoadmisión en el tótem",
+     "pantallas": [
+      "tt0-totem-bienvenida-y-lectura-de-cedula.html",
+      "tt1-totem-leyendo-la-cedula.html",
+      "tt2-totem-confirmar-la-hora-del-dia.html",
+      "tt3-totem-llegada-confirmada-y-comprobante.html"
+     ]
+    },
+    {
+     "nombre": "Tótem sin cédula, derivación al mesón y sin conexión",
+     "pantallas": [
+      "tt4-totem-ingresar-run-sin-cedula.html",
+      "tt5-totem-confirmar-identidad-con-huella.html",
+      "tt6-totem-pase-al-meson.html",
+      "tt7-totem-funcionamiento-sin-conexion.html"
+     ]
     }
    ]
   },
@@ -331,8 +389,10 @@ window.CT_DATOS = {
    "nombre": "Personal de mesón y admisión",
    "recorridos": [
     {
-     "nombre": "Admisión y copago",
+     "nombre": "Ingreso y admisión con copago",
      "pantallas": [
+      "a1p-inicio-de-sesion-personal-de-la-red.html",
+      "a2p-segundo-factor-personal-de-la-red.html",
       "c0-inicio-admision.html",
       "p4-admision-identificacion.html",
       "p5-admision-prevision-y-copago.html"
@@ -363,8 +423,16 @@ window.CT_DATOS = {
     {
      "nombre": "Ingreso al box compartido",
      "pantallas": [
-      "a1-inicio-de-sesion.html",
+      "a1p-inicio-de-sesion-personal-de-la-red.html",
       "a3-box-compartido-tarjeta-y-pin.html",
+      "d0-inicio-profesional.html"
+     ]
+    },
+    {
+     "nombre": "Ingreso con clave",
+     "pantallas": [
+      "a1p-inicio-de-sesion-personal-de-la-red.html",
+      "a2p-segundo-factor-personal-de-la-red.html",
       "d0-inicio-profesional.html"
      ]
     },
@@ -396,8 +464,10 @@ window.CT_DATOS = {
    "nombre": "Jefatura de agenda y contact center",
    "recorridos": [
     {
-     "nombre": "Tablero de inicio",
+     "nombre": "Ingreso y tablero de inicio",
      "pantallas": [
+      "a1p-inicio-de-sesion-personal-de-la-red.html",
+      "a2p-segundo-factor-personal-de-la-red.html",
       "j0-inicio-jefatura-de-agenda-tablero-configurable.html",
       "j1-inicio-jefatura-de-agenda-personalizar-tablero.html"
      ]
@@ -458,8 +528,10 @@ window.CT_DATOS = {
    "nombre": "Administración del sistema",
    "recorridos": [
     {
-     "nombre": "Usuarios, permisos, parámetros y auditoría",
+     "nombre": "Ingreso, usuarios, permisos, parámetros y auditoría",
      "pantallas": [
+      "a1p-inicio-de-sesion-personal-de-la-red.html",
+      "a2p-segundo-factor-personal-de-la-red.html",
       "ad1-administracion-usuarios.html",
       "ad5-administracion-confirmar-suspension-de-acceso.html",
       "ad2-administracion-roles-y-permisos.html",

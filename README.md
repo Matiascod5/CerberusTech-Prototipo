@@ -1,6 +1,6 @@
 # Prototipo navegable Red Ñielol — Cerberus Tech
 
-Versión web del prototipo de alta fidelidad diseñado en Figma (archivo «CERBERUSTECH - Prototipo Red Ñielol (avance Informe 3)», página «02 · Prototipo navegable»). Reúne 66 pantallas para escritorio, tableta, teléfono y pantalla grande, enlazadas en los mismos 17 recorridos del modo presentación de Figma.
+Versión web del prototipo de alta fidelidad diseñado en Figma (archivo «CERBERUSTECH - Prototipo Red Ñielol (avance Informe 3)», página «02 · Prototipo navegable»). Reúne 68 pantallas generadas desde Figma, para escritorio, tableta, teléfono y pantalla grande, y 8 pantallas del tótem de autoadmisión dibujadas directamente en HTML, organizadas por actor.
 
 ## Cómo abrirlo
 
@@ -18,6 +18,14 @@ Versión web del prototipo de alta fidelidad diseñado en Figma (archivo «CERBE
 - Las ventanas de firma (M1) y de liberación de cupo (M2) se abren sobre la pantalla de origen; «Cancelar» o «Cerrar» las cierra.
 - Los desplegables de período y profesional se abren con un clic. Los botones cambian de aspecto al pasar el cursor y al presionarlos.
 - La pantalla de carga K0 avanza sola al tablero K1.
+
+## Flujos por actor
+
+Cada actor recorre solo sus propias pantallas. El personal de la Red ingresa por una variante del inicio de sesión con la pestaña «Personal de la Red» seleccionada (A1p y A2p), que lo lleva al inicio de su perfil; la opción «Tarjeta del box» se muestra solo al profesional de la salud. Los botones que en Figma conectaban con pantallas de otro actor se dirigieron a la pantalla equivalente del mismo actor o quedaron sin enlace. Las pestañas «Paciente» y «Personal de la Red» del inicio de sesión son la única forma de cambiar de actor desde una pantalla.
+
+## Tótem de autoadmisión
+
+Las pantallas TT0 a TT7 forman parte del flujo del paciente y siguen el requerimiento RF-C2-10, el caso de uso 3.4.2.12, la regla RN-IDE-07 y los supuestos S-04, S-17 y S-59 del Subdocumento 3: confirmación de la llegada con la cédula, ingreso con RUN y huella para quien la registró en el mesón, derivación al mesón cuando no hay hora, hay copago o falla la lectura, y funcionamiento sin conexión solo con cédula. Los botones de letra grande, alto contraste y guía por voz funcionan en el navegador.
 
 ## Estilo visual
 

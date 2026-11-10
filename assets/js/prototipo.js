@@ -62,6 +62,14 @@
     return href + q(r);
   }
 
+  // Elementos que solo corresponden a un actor (por ejemplo, la tarjeta del box)
+  (function soloActor() {
+    var el = document.querySelectorAll('[data-solo-actor]');
+    for (var i = 0; i < el.length; i++) {
+      if (actor && el[i].getAttribute('data-solo-actor') !== actor.id) el[i].style.display = 'none';
+    }
+  })();
+
   (function setupBar() {
     var aEl = document.querySelector('[data-ui="actor"]');
     var fEl = document.querySelector('[data-ui="flow"]');
@@ -179,6 +187,10 @@
   }
 
   function act(t) {
+    var ga = t.getAttribute('data-go-actor');
+    if (ga && actor) {
+      try { var m = JSON.parse(ga); if (m[actor.id]) { location.href = withCtx(m[actor.id]); return; } } catch (err) { /* destino por defecto */ }
+    }
     var go = t.getAttribute('data-go');
     if (go) { location.href = withCtx(go); return; }
     var url = t.getAttribute('data-url');
@@ -197,6 +209,7 @@
 
   var HS = '[data-go],[data-act],[data-url]';
   screen.addEventListener('click', function (e) {
+    if (e.target.closest('button')) return; // controles propios de la pantalla (tótem)
     var t = e.target.closest(HS);
     var openT = e.target.closest('.tgl.open');
     if (!openT) closeToggles(null);
