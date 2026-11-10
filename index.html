@@ -20,56 +20,51 @@
     <p>Cada actor tiene su propio flujo, formado por los recorridos que realiza en el sistema. «Ver su flujo» muestra los recorridos y sus pasos en orden; «Comenzar» abre directamente la primera pantalla.</p>
     <ol class="actors">
 <li class="actor">
-  <span class="actor-ini" aria-hidden="true">PA</span>
-  <div class="actor-b">
-    <h3>Paciente</h3>
-    <p>Busca y reserva horas, recibe recordatorios, se registra, recupera su acceso y se atiende por telemedicina desde el portal y el teléfono.</p>
-    <p class="meta">6 recorridos · 23 pantallas</p>
+  <div class="actor-top">
+    <span class="actor-ini" aria-hidden="true">PA</span>
+    <div><h3>Paciente</h3><p class="meta">6 recorridos · 23 pantallas</p></div>
   </div>
+  <p class="actor-b">Busca y reserva horas, recibe recordatorios, se registra, recupera su acceso y se atiende por telemedicina desde el portal y el teléfono.</p>
   <div class="actor-act">
     <a class="btn" href="actores/paciente.html">Ver su flujo</a>
     <a class="btn ghost" href="pantallas/00-portal-publico.html?a=paciente&amp;r=0">Comenzar</a>
   </div>
 </li><li class="actor">
-  <span class="actor-ini" aria-hidden="true">MA</span>
-  <div class="actor-b">
-    <h3>Personal de mesón y admisión</h3>
-    <p>Identifica al paciente, verifica su previsión, cobra el copago y consulta el directorio y la ficha de pacientes.</p>
-    <p class="meta">3 recorridos · 9 pantallas</p>
+  <div class="actor-top">
+    <span class="actor-ini" aria-hidden="true">MA</span>
+    <div><h3>Personal de mesón y admisión</h3><p class="meta">3 recorridos · 9 pantallas</p></div>
   </div>
+  <p class="actor-b">Identifica al paciente, verifica su previsión, cobra el copago y consulta el directorio y la ficha de pacientes.</p>
   <div class="actor-act">
     <a class="btn" href="actores/meson-y-admision.html">Ver su flujo</a>
     <a class="btn ghost" href="pantallas/c0-inicio-admision.html?a=meson-y-admision&amp;r=0">Comenzar</a>
   </div>
 </li><li class="actor">
-  <span class="actor-ini" aria-hidden="true">PS</span>
-  <div class="actor-b">
-    <h3>Profesional de la salud</h3>
-    <p>Ingresa al box con su tarjeta, atiende, emite órdenes y recetas, firma electrónicamente y atiende por telemedicina o en tableta.</p>
-    <p class="meta">4 recorridos · 9 pantallas</p>
+  <div class="actor-top">
+    <span class="actor-ini" aria-hidden="true">PS</span>
+    <div><h3>Profesional de la salud</h3><p class="meta">4 recorridos · 9 pantallas</p></div>
   </div>
+  <p class="actor-b">Ingresa al box con su tarjeta, atiende, emite órdenes y recetas, firma electrónicamente y atiende por telemedicina o en tableta.</p>
   <div class="actor-act">
     <a class="btn" href="actores/profesional-de-la-salud.html">Ver su flujo</a>
     <a class="btn ghost" href="pantallas/a1-inicio-de-sesion.html?a=profesional-de-la-salud&amp;r=0">Comenzar</a>
   </div>
 </li><li class="actor">
-  <span class="actor-ini" aria-hidden="true">JA</span>
-  <div class="actor-b">
-    <h3>Jefatura de agenda y contact center</h3>
-    <p>Gestiona las horas sin confirmar, la lista de espera, la sobreagenda, las ausencias de profesionales, los recordatorios y los indicadores de la Red.</p>
-    <p class="meta">7 recorridos · 21 pantallas</p>
+  <div class="actor-top">
+    <span class="actor-ini" aria-hidden="true">JA</span>
+    <div><h3>Jefatura de agenda y contact center</h3><p class="meta">7 recorridos · 21 pantallas</p></div>
   </div>
+  <p class="actor-b">Gestiona las horas sin confirmar, la lista de espera, la sobreagenda, las ausencias de profesionales, los recordatorios y los indicadores de la Red.</p>
   <div class="actor-act">
     <a class="btn" href="actores/jefatura-de-agenda.html">Ver su flujo</a>
     <a class="btn ghost" href="pantallas/j0-inicio-jefatura-de-agenda-tablero-configurable.html?a=jefatura-de-agenda&amp;r=0">Comenzar</a>
   </div>
 </li><li class="actor">
-  <span class="actor-ini" aria-hidden="true">AS</span>
-  <div class="actor-b">
-    <h3>Administración del sistema</h3>
-    <p>Administra los usuarios, los roles y permisos, los parámetros del sistema y la auditoría de accesos.</p>
-    <p class="meta">1 recorrido · 5 pantallas</p>
+  <div class="actor-top">
+    <span class="actor-ini" aria-hidden="true">AS</span>
+    <div><h3>Administración del sistema</h3><p class="meta">1 recorrido · 5 pantallas</p></div>
   </div>
+  <p class="actor-b">Administra los usuarios, los roles y permisos, los parámetros del sistema y la auditoría de accesos.</p>
   <div class="actor-act">
     <a class="btn" href="actores/administracion-del-sistema.html">Ver su flujo</a>
     <a class="btn ghost" href="pantallas/ad1-administracion-usuarios.html?a=administracion-del-sistema&amp;r=0">Comenzar</a>
@@ -79,7 +74,13 @@
   </section>
   <section>
     <h2>Cómo recorrerlo</h2>
-    <p>Cada pantalla se muestra ajustada al tamaño de la ventana. Los botones, enlaces, menús y tarjetas llevan a la pantalla siguiente, igual que en el modo presentación de Figma. La barra superior indica el actor, el recorrido y el paso en que se encuentra. El botón «Atrás» (o la tecla Retroceso) vuelve a la pantalla anterior, y las flechas de la derecha (o las teclas ← y →) pasan al paso anterior o siguiente del recorrido. Al hacer clic en una zona sin acción se resaltan por un instante las zonas que sí responden; «Zonas clicables» (tecla H) las deja resaltadas y «Ajustar» (tecla F) alterna entre ajustar a la ventana y ver la pantalla a tamaño real.</p>
+    <p>Cada pantalla se muestra ajustada al tamaño de la ventana y responde como en el modo presentación de Figma: botones, enlaces, menús y tarjetas llevan a la pantalla siguiente.</p>
+    <div class="how">
+      <div><strong>Volver atrás</strong>El botón «Atrás» de la barra superior, o la tecla <kbd>Retroceso</kbd>, regresa a la pantalla anterior.</div>
+      <div><strong>Avanzar por pasos</strong>Las flechas de la barra, o las teclas <kbd>←</kbd> y <kbd>→</kbd>, pasan al paso anterior o siguiente del recorrido.</div>
+      <div><strong>Encontrar las acciones</strong>Un clic en una zona sin acción resalta las zonas clicables; «Zonas clicables» (<kbd>H</kbd>) las deja visibles.</div>
+      <div><strong>Cambiar el tamaño</strong>«Ajustar» (<kbd>F</kbd>) alterna entre ajustar la pantalla a la ventana y verla a tamaño real.</div>
+    </div>
   </section>
   <section>
     <h2>Todas las pantallas</h2>

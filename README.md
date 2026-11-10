@@ -19,6 +19,12 @@ Versión web del prototipo de alta fidelidad diseñado en Figma (archivo «CERBE
 - Los desplegables de período y profesional se abren con un clic. Los botones cambian de aspecto al pasar el cursor y al presionarlos.
 - La pantalla de carga K0 avanza sola al tablero K1.
 
+## Estilo visual
+
+La versión web usa una paleta de cinco colores base, con tintes derivados de ellos: blanco, tinta (#1F1A2E), morado (#5B2A8C), ámbar (#D99A26) y rojo (#B3263E). Sobre el diseño de Figma agrega profundidad sobria: sombras leves en tarjetas y botones principales, degradados suaves en las áreas de color y en el fondo, y una barra de navegación clara. La distribución, los textos y las interacciones de cada pantalla se mantienen.
+
+Como referencia de usabilidad se revisaron los sitios de Clínica Alemana, Clínica Las Condes, UC CHRISTUS, RedSalud, IntegraMédica y Red Dávila: fondo blanco con un color institucional fuerte para la acción principal, reserva de hora visible desde el inicio, accesos rápidos en tarjetas con íconos de línea y bordes redondeados con sombras suaves.
+
 ## Estructura
 
 ```
