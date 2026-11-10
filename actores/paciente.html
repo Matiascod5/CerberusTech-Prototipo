@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paciente — Prototipo Red Ñielol · Cerberus Tech</title>
+<link rel="stylesheet" href="../assets/css/prototipo.css">
+</head>
+<body class="idx">
+<header class="ihead small">
+  <div class="wrap">
+    <p class="kicker"><a href="../index.html">Prototipo Red Ñielol</a> · Flujo por actor</p>
+    <h1><span class="actor-ini big" aria-hidden="true">PA</span>Paciente</h1>
+    <p class="lead">Busca y reserva horas, recibe recordatorios, se registra, recupera su acceso y se atiende por telemedicina desde el portal y el teléfono.</p>
+    <nav class="actor-tabs" aria-label="Actores"><a href="paciente.html" aria-current="page">Paciente</a><a href="meson-y-admision.html">Personal de mesón y admisión</a><a href="profesional-de-la-salud.html">Profesional de la salud</a><a href="jefatura-de-agenda.html">Jefatura de agenda y contact center</a><a href="administracion-del-sistema.html">Administración del sistema</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <p class="intro">El flujo de este actor se compone de 6 recorridos. Cada uno muestra sus pasos en el orden en que se recorren. Se puede comenzar un recorrido desde su primer paso o abrir cualquier paso directamente.</p>
+<section class="rec">
+  <div class="rec-h">
+    <h3><span class="rec-n">1</span>Reservar una hora</h3>
+    <a class="btn" href="../pantallas/00-portal-publico.html?a=paciente&amp;r=0">Comenzar recorrido</a>
+  </div>
+  <ol class="steps"><li><a href="../pantallas/00-portal-publico.html?a=paciente&amp;r=0"><span class="st-n">1</span><span class="st-t"><strong>00</strong> Portal público</span><span class="dev">Escritorio</span></a></li><li><a href="../pantallas/a1-inicio-de-sesion.html?a=paciente&amp;r=0"><span class="st-n">2</span><span class="st-t"><strong>A1</strong> Inicio de sesión</span><span class="dev">Escritorio</span></a></li><li><a href="../pantallas/a2-segundo-factor.html?a=paciente&amp;r=0"><span class="st-n">3</span><span class="st-t"><strong>A2</strong> Segundo factor</span><span class="dev">Escritorio</span></a></li><li><a href="../pantallas/b0-inicio-paciente.html?a=paciente&amp;r=0"><span class="st-n">4</span><span class="st-t"><strong>B0</strong> Inicio paciente</span><span class="dev">Teléfono</span></a></li><li><a href="../pantallas/p1-reservar-elegir-hora.html?a=paciente&amp;r=0"><span class="st-n">5</span><span class="st-t"><strong>P1</strong> Reservar: elegir hora</span><span class="dev">Teléfono</span></a></li><li><a href="../pantallas/p2-reservar-confirmar.html?a=paciente&amp;r=0"><span class="st-n">6</span><span class="st-t"><strong>P2</strong> Reservar: confirmar</span><span class="dev">Teléfono</span></a></li><li><a href="../pantallas/p3-recordatorio-por-mensaje.html?a=paciente&amp;r=0"><span class="st-n">7</span><span class="st-t"><strong>P3</strong> Recordatorio por mensaje</span><span class="dev">Teléfono</span></a></li></ol>
+</section><section class="rec">
+  <div class="rec-h">
+    <h3><span class="rec-n">2</span>Llamado en sala y cierre de la atención</h3>
+    <a class="btn" href="../pantallas/p6-sala-de-espera-llamado.html?a=paciente&amp;r=1">Comenzar recorrido</a>
+  </div>
+  <ol class="steps"><li><a href="../pantallas/p6-sala-de-espera-llamado.html?a=paciente&amp;r=1"><span class="st-n">1</span><span class="st-t"><strong>P6</strong> Sala de espera: llamado</span><span class="dev">Escritorio</span></a></li><li><a href="../pantallas/p9-cierre-comprobante-y-proxima-hora.html?a=paciente&amp;r=1"><span class="st-n">2</span><span class="st-t"><strong>P9</strong> Cierre: comprobante y próxima hora</span><span class="dev">Teléfono</span></a></li></ol>
+</section><section class="rec">
+  <div class="rec-h">
+    <h3><span class="rec-n">3</span>Registro y primer ingreso</h3>
+    <a class="btn" href="../pantallas/r1-registro-identificacion.html?a=paciente&amp;r=2">Comenzar recorrido</a>
+  </div>
+  <ol class="steps"><li><a href="../pantallas/r1-registro-identificacion.html?a=paciente&amp;r=2"><span class="st-n">1</span><span class="st-t"><strong>R1</strong> Registro: identificación</span><span class="dev">Escritorio</span></a></li><li><a href="../pantallas/r2-registro-contacto.html?a=paciente&amp;r=2"><span class="st-n">2</span><span class="st-t"><strong>R2</strong> Registro: contacto</span><span class="dev">Escritorio</span></a></li><li><a href="../pantallas/r3-registro-prevision-y-centro.html?a=paciente&amp;r=2"><span class="st-n">3</span><span class="st-t"><strong>R3</strong> Registro: previsión y centro</span><span class="dev">Escritorio</span></a></li><li><a href="../pantallas/r4-registro-verificar-telefono.html?a=paciente&amp;r=2"><span class="st-n">4</span><span class="st-t"><strong>R4</strong> Registro: verificar teléfono</span><span class="dev">Escritorio</span></a></li><li><a href="../pantallas/r5-registro-preferencias-y-clave.html?a=paciente&amp;r=2"><span class="st-n">5</span><span class="st-t"><strong>R5</strong> Registro: preferencias y clave</span><span class="dev">Escritorio</span></a></li><li><a href="../pantallas/r6-registro-cuenta-creada.html?a=paciente&amp;r=2"><span class="st-n">6</span><span class="st-t"><strong>R6</strong> Registro: cuenta creada</span><span class="dev">Escritorio</span></a></li><li><a href="../pantallas/g1-primer-ingreso-recorrido-guiado-1-de-3.html?a=paciente&amp;r=2"><span class="st-n">7</span><span class="st-t"><strong>G1</strong> Primer ingreso: recorrido guiado 1 de 3</span><span class="dev">Teléfono</span></a></li><li><a href="../pantallas/g2-primer-ingreso-recorrido-guiado-2-de-3.html?a=paciente&amp;r=2"><span class="st-n">8</span><span class="st-t"><strong>G2</strong> Primer ingreso: recorrido guiado 2 de 3</span><span class="dev">Teléfono</span></a></li><li><a href="../pantallas/g3-primer-ingreso-recorrido-guiado-3-de-3.html?a=paciente&amp;r=2"><span class="st-n">9</span><span class="st-t"><strong>G3</strong> Primer ingreso: recorrido guiado 3 de 3</span><span class="dev">Teléfono</span></a></li></ol>
+</section><section class="rec">
+  <div class="rec-h">
+    <h3><span class="rec-n">4</span>Recuperación de acceso</h3>
+    <a class="btn" href="../pantallas/ra1-recuperar-acceso-identificacion.html?a=paciente&amp;r=3">Comenzar recorrido</a>
+  </div>
+  <ol class="steps"><li><a href="../pantallas/ra1-recuperar-acceso-identificacion.html?a=paciente&amp;r=3"><span class="st-n">1</span><span class="st-t"><strong>RA1</strong> Recuperar acceso: identificación</span><span class="dev">Escritorio</span></a></li><li><a href="../pantallas/ra2-recuperar-acceso-nueva-clave.html?a=paciente&amp;r=3"><span class="st-n">2</span><span class="st-t"><strong>RA2</strong> Recuperar acceso: nueva clave</span><span class="dev">Escritorio</span></a></li></ol>
+</section><section class="rec">
+  <div class="rec-h">
+    <h3><span class="rec-n">5</span>Consulta por telemedicina</h3>
+    <a class="btn" href="../pantallas/tm1-telemedicina-sala-de-espera-del-paciente.html?a=paciente&amp;r=4">Comenzar recorrido</a>
+  </div>
+  <ol class="steps"><li><a href="../pantallas/tm1-telemedicina-sala-de-espera-del-paciente.html?a=paciente&amp;r=4"><span class="st-n">1</span><span class="st-t"><strong>TM1</strong> Telemedicina: sala de espera del paciente</span><span class="dev">Teléfono</span></a></li><li><a href="../pantallas/tm1b-telemedicina-paciente-en-la-consulta.html?a=paciente&amp;r=4"><span class="st-n">2</span><span class="st-t"><strong>TM1b</strong> Telemedicina: paciente en la consulta</span><span class="dev">Teléfono</span></a></li></ol>
+</section><section class="rec">
+  <div class="rec-h">
+    <h3><span class="rec-n">6</span>Portal público en el teléfono</h3>
+    <a class="btn" href="../pantallas/00m-portal-publico-telefono-375-812.html?a=paciente&amp;r=5">Comenzar recorrido</a>
+  </div>
+  <ol class="steps"><li><a href="../pantallas/00m-portal-publico-telefono-375-812.html?a=paciente&amp;r=5"><span class="st-n">1</span><span class="st-t"><strong>00m</strong> Portal público (teléfono 375 × 812)</span><span class="dev">Teléfono</span></a></li></ol>
+</section>
+</main>
+<footer class="ifoot"><div class="wrap"><a href="../index.html">← Volver a la selección de actores</a></div></footer>
+</body>
+</html>

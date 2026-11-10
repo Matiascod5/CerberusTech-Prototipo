@@ -4,19 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>P3 · Recordatorio por mensaje — Prototipo Red Ñielol · Cerberus Tech</title>
-
 <link rel="stylesheet" href="../assets/css/prototipo.css">
 <style></style>
 </head>
-<body class="proto" data-w="375" data-h="812">
+<body class="proto" data-w="375" data-h="812" data-file="p3-recordatorio-por-mensaje.html">
 <header class="pbar">
-  <a class="pb-home" href="../index.html" title="Volver al índice de pantallas">Cerberus Tech <span>· Red Ñielol</span></a>
-  <div class="pb-title"><strong>P3</strong> Recordatorio por mensaje <em>375 × 812</em></div>
+  <button class="pb-btn back" type="button" data-ui="back" title="Volver a la pantalla anterior (tecla Retroceso)"><span aria-hidden="true">&#8592;</span> Atrás</button>
+  <a class="pb-actor" href="../index.html" data-ui="actor" title="Volver a los recorridos del actor">Índice</a>
+  <div class="pb-title">
+    <span class="pb-screen"><strong>P3</strong> Recordatorio por mensaje</span>
+    <span class="pb-flow" data-ui="flow"></span>
+  </div>
   <div class="pb-tools">
-    <a class="pb-btn txt" href="00-portal-publico.html" title="Volver a la pantalla de inicio del prototipo">Reiniciar</a>
     <button class="pb-btn txt" type="button" data-ui="hotspots" aria-pressed="false" title="Resaltar las zonas en las que se puede hacer clic (tecla H)">Zonas clicables</button>
     <button class="pb-btn txt" type="button" data-ui="fit" aria-pressed="true" title="Alternar entre ajustar a la ventana y tamaño real (tecla F)">Ajustar</button>
-    <a class="pb-btn" href="p2-reservar-confirmar.html" title="Pantalla anterior: P2 · Reservar: confirmar" aria-label="Pantalla anterior">&#8249;</a><a class="pb-btn" href="p9-cierre-comprobante-y-proxima-hora.html" title="Pantalla siguiente: P9 · Cierre: comprobante y próxima hora" aria-label="Pantalla siguiente">&#8250;</a>
+    <a class="pb-btn" data-ui="prev" title="Paso anterior del recorrido (tecla ←)" aria-label="Paso anterior del recorrido">&#8249;</a>
+    <span class="pb-step" data-ui="step"></span>
+    <a class="pb-btn" data-ui="next" title="Paso siguiente del recorrido (tecla →)" aria-label="Paso siguiente del recorrido">&#8250;</a>
   </div>
 </header>
 <main class="stage">
@@ -25,6 +29,7 @@
 
   </div>
 </main>
+<script src="../assets/js/actores.js"></script>
 <script src="../assets/js/prototipo.js"></script>
 </body>
 </html>

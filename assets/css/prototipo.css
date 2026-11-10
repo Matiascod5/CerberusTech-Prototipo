@@ -140,3 +140,69 @@ body.idx { background: var(--arena); font-size: 17px; line-height: 1.55; }
   .ihead h1 { font-size: 32px; }
   .flows { grid-template-columns: 1fr; }
 }
+
+/* ---------- Barra: actor, recorrido y regreso ---------- */
+.pb-btn.back { font-size: 14px; gap: 6px; padding: 0 12px; background: #263540; border-color: #4a5a63; }
+.pb-btn.back span { font-size: 16px; }
+.pb-actor {
+  color: #9fd3cd; text-decoration: none; font-weight: 700; white-space: nowrap;
+  max-width: 260px; overflow: hidden; text-overflow: ellipsis;
+}
+.pb-actor:hover { text-decoration: underline; }
+.pb-title { display: flex; flex-direction: column; justify-content: center; line-height: 1.2; }
+.pb-screen, .pb-flow { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pb-flow { font-size: 12px; color: #8fa0a7; }
+.pb-flow:empty { display: none; }
+.pb-step { font-size: 12px; color: #c7d2d6; white-space: nowrap; min-width: 0; }
+.pb-step:empty { display: none; }
+a.pb-btn:not([href]) { opacity: .35; cursor: default; }
+@media (max-width: 1000px) { .pb-flow { display: none; } .pb-actor { max-width: 160px; } }
+@media (max-width: 760px) { .pb-actor, .pb-step { display: none; } .pb-btn.back { padding: 0 8px; } }
+
+/* ---------- Índice: actores ---------- */
+.actors { list-style: none; margin: 20px 0 0; padding: 0; display: grid; gap: 12px; }
+.actor { display: flex; align-items: center; gap: 18px; background: #fff; border: 1px solid var(--borde); border-radius: 12px; padding: 18px 20px; }
+.actor-ini {
+  flex: none; width: 48px; height: 48px; border-radius: 50%; display: inline-grid; place-items: center;
+  background: var(--petroleo-claro); color: var(--petroleo); font-weight: 700; font-size: 16px;
+}
+.actor-ini.big { width: 56px; height: 56px; font-size: 18px; margin-right: 14px; vertical-align: middle; background: #fff; }
+.actor-b { flex: 1; min-width: 0; }
+.actor h3 { margin: 0; font-size: 19px; }
+.actor p { margin: 4px 0 0; font-size: 15px; color: var(--tinta-2); line-height: 1.45; }
+.actor p.meta { font-size: 13px; color: #857c6d; }
+.actor-act { display: flex; flex-direction: column; gap: 8px; }
+.actor-act .btn { height: 40px; font-size: 15px; }
+.btn.ghost { background: #fff; color: var(--petroleo); box-shadow: inset 0 0 0 2px var(--petroleo); }
+.btn.ghost:hover { background: var(--petroleo-claro); }
+
+/* ---------- Página de actor ---------- */
+.ihead.small { padding: 36px 0 28px; }
+.ihead.small h1 { font-size: 38px; display: flex; align-items: center; }
+.kicker a { color: inherit; }
+.actor-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.actor-tabs a { color: #d9e2e5; text-decoration: none; font-size: 14px; padding: 6px 12px; border-radius: 999px; border: 1px solid #3f5560; }
+.actor-tabs a:hover { background: #263540; }
+.actor-tabs a[aria-current="page"] { background: #fff; color: var(--tinta); border-color: #fff; font-weight: 700; }
+.intro { max-width: 820px; color: var(--tinta-2); margin: 32px 0 8px; }
+.rec { background: #fff; border: 1px solid var(--borde); border-radius: 12px; padding: 18px 20px; margin-top: 16px; }
+.rec-h { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.rec h3 { margin: 0; font-size: 20px; display: flex; align-items: center; gap: 12px; }
+.rec-n { width: 32px; height: 32px; border-radius: 50%; display: inline-grid; place-items: center; background: var(--tinta); color: #fff; font-size: 15px; }
+.rec .btn { height: 40px; font-size: 15px; }
+.steps { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.steps li { display: flex; align-items: center; }
+.steps li + li::before { content: '→'; color: #857c6d; margin-right: 8px; }
+.steps a {
+  display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 8px;
+  background: var(--arena); color: var(--tinta); text-decoration: none; font-size: 15px; border: 1px solid #e6dfd2;
+}
+.steps a:hover { border-color: var(--petroleo); background: var(--petroleo-claro); }
+.st-n { font-size: 12px; font-weight: 700; color: var(--petroleo); }
+.steps .dev { background: #fff; }
+.ifoot a { color: var(--petroleo); }
+@media (max-width: 700px) {
+  .actor { flex-direction: column; align-items: flex-start; }
+  .actor-act { flex-direction: row; }
+  .rec-h { flex-direction: column; align-items: flex-start; }
+}

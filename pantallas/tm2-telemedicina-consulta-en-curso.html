@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TM2 · Telemedicina: consulta en curso — Prototipo Red Ñielol · Cerberus Tech</title>
-
 <link rel="stylesheet" href="../assets/css/prototipo.css">
 <style>#n56_8301:hover{background:#fbe9ec!important;}
 #n56_8301:hover>.stk{border-color:#b3263e!important}
@@ -14,15 +13,20 @@
 #n56_8326:hover{background:#073f3e!important;}
 #n56_8326:active{background:#1b2a32!important;}</style>
 </head>
-<body class="proto" data-w="1366" data-h="768">
+<body class="proto" data-w="1366" data-h="768" data-file="tm2-telemedicina-consulta-en-curso.html">
 <header class="pbar">
-  <a class="pb-home" href="../index.html" title="Volver al índice de pantallas">Cerberus Tech <span>· Red Ñielol</span></a>
-  <div class="pb-title"><strong>TM2</strong> Telemedicina: consulta en curso <em>1366 × 768</em></div>
+  <button class="pb-btn back" type="button" data-ui="back" title="Volver a la pantalla anterior (tecla Retroceso)"><span aria-hidden="true">&#8592;</span> Atrás</button>
+  <a class="pb-actor" href="../index.html" data-ui="actor" title="Volver a los recorridos del actor">Índice</a>
+  <div class="pb-title">
+    <span class="pb-screen"><strong>TM2</strong> Telemedicina: consulta en curso</span>
+    <span class="pb-flow" data-ui="flow"></span>
+  </div>
   <div class="pb-tools">
-    <a class="pb-btn txt" href="00-portal-publico.html" title="Volver a la pantalla de inicio del prototipo">Reiniciar</a>
     <button class="pb-btn txt" type="button" data-ui="hotspots" aria-pressed="false" title="Resaltar las zonas en las que se puede hacer clic (tecla H)">Zonas clicables</button>
     <button class="pb-btn txt" type="button" data-ui="fit" aria-pressed="true" title="Alternar entre ajustar a la ventana y tamaño real (tecla F)">Ajustar</button>
-    <a class="pb-btn" href="tm1-telemedicina-sala-de-espera-del-paciente.html" title="Pantalla anterior: TM1 · Telemedicina: sala de espera del paciente" aria-label="Pantalla anterior">&#8249;</a><a class="pb-btn" href="rc1-recordatorios-y-avisos-configuracion.html" title="Pantalla siguiente: RC1 · Recordatorios y avisos: configuración" aria-label="Pantalla siguiente">&#8250;</a>
+    <a class="pb-btn" data-ui="prev" title="Paso anterior del recorrido (tecla ←)" aria-label="Paso anterior del recorrido">&#8249;</a>
+    <span class="pb-step" data-ui="step"></span>
+    <a class="pb-btn" data-ui="next" title="Paso siguiente del recorrido (tecla →)" aria-label="Paso siguiente del recorrido">&#8250;</a>
   </div>
 </header>
 <main class="stage">
@@ -31,6 +35,7 @@
 
   </div>
 </main>
+<script src="../assets/js/actores.js"></script>
 <script src="../assets/js/prototipo.js"></script>
 </body>
 </html>

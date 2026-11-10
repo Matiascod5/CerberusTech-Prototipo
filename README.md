@@ -9,21 +9,24 @@ Versión web del prototipo de alta fidelidad diseñado en Figma (archivo «CERBE
 
 ## Uso
 
-- `index.html` lista los recorridos y todas las pantallas.
-- Cada pantalla se ajusta al tamaño de la ventana. Botones, enlaces, menús y tarjetas llevan a la pantalla siguiente, igual que en Figma.
-- Al hacer clic en una zona sin acción se resaltan las zonas clicables. «Zonas clicables» (tecla H) las deja resaltadas.
-- «Ajustar» (tecla F) alterna entre ajustar a la ventana y tamaño real. Las teclas ← y → pasan a la pantalla anterior o siguiente.
-- Las ventanas de firma (M1) y de liberación de cupo (M2) se abren sobre la pantalla de origen y «Cancelar» o «Cerrar» las cierra.
+- `index.html` presenta los cinco actores: paciente, personal de mesón y admisión, profesional de la salud, jefatura de agenda y contact center, y administración del sistema.
+- «Ver su flujo» abre la página del actor (`actores/`), con sus recorridos y los pasos de cada uno en orden. «Comenzar» abre la primera pantalla.
+- La barra superior de cada pantalla muestra el actor, el recorrido y el paso. El nombre del actor lleva de vuelta a su flujo.
+- **Atrás** (o la tecla Retroceso) vuelve a la pantalla anterior. Las flechas de la derecha (o las teclas ← y →) pasan al paso anterior o siguiente del recorrido.
+- Cada pantalla se ajusta al tamaño de la ventana. Botones, enlaces, menús y tarjetas llevan a la pantalla siguiente, igual que en Figma. Si una acción lleva a una pantalla de otro actor, la barra cambia a ese actor.
+- Al hacer clic en una zona sin acción se resaltan las zonas clicables. «Zonas clicables» (tecla H) las deja resaltadas y «Ajustar» (tecla F) alterna entre ajustar a la ventana y tamaño real.
+- Las ventanas de firma (M1) y de liberación de cupo (M2) se abren sobre la pantalla de origen; «Cancelar» o «Cerrar» las cierra.
 - Los desplegables de período y profesional se abren con un clic. Los botones cambian de aspecto al pasar el cursor y al presionarlos.
 - La pantalla de carga K0 avanza sola al tablero K1.
 
 ## Estructura
 
 ```
-index.html              Índice de recorridos y pantallas
+index.html              Selección de actor y listado de pantallas
+actores/                Flujo de cada actor: recorridos y pasos
 pantallas/              Una página HTML por pantalla
 assets/css/             Estilos del visor e índice
-assets/js/              Navegación, ventanas superpuestas, desplegables y escalado
+assets/js/              Actores y recorridos, navegación, ventanas superpuestas y escalado
 assets/svg/             Íconos y gráficos exportados desde Figma
 assets/fonts/           Atkinson Hyperlegible Next y Literata
 ```
