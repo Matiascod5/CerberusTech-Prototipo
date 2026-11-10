@@ -12,6 +12,7 @@ Versión web del prototipo de alta fidelidad diseñado en Figma (archivo «CERBE
 - `index.html` presenta los seis actores: paciente, paciente (tótem de atención), personal de mesón y admisión, profesional de la salud, jefatura de agenda y contact center, y administración del sistema.
 - «Ver su flujo» abre la página del actor (`actores/`), con sus recorridos y los pasos de cada uno en orden. «Comenzar» abre la primera pantalla.
 - La barra superior de cada pantalla muestra el actor, el recorrido y el paso. El nombre del actor lleva de vuelta a su flujo.
+- **Salir al inicio**, en el extremo derecho de la barra, cierra el recorrido y vuelve a la página inicial del prototipo.
 - **Atrás** (o la tecla Retroceso) vuelve a la pantalla anterior. Las flechas de la derecha (o las teclas ← y →) pasan al paso anterior o siguiente del recorrido.
 - Cada pantalla se ajusta al tamaño de la ventana. Botones, enlaces, menús y tarjetas llevan a la pantalla siguiente, igual que en Figma. Si una acción lleva a una pantalla de otro actor, la barra cambia a ese actor.
 - Al hacer clic en una zona sin acción se resaltan las zonas clicables. «Zonas clicables» (tecla H) las deja resaltadas y «Ajustar» (tecla F) alterna entre ajustar a la ventana y tamaño real.

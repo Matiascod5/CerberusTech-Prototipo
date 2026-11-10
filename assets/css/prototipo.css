@@ -392,3 +392,9 @@ body.idx { background: #fff; font-size: 17px; line-height: 1.55; }
 .how strong { margin-top: 2px; }
 @media (max-width: 600px) { .guia-item { flex-direction: column; } }
 .idx .lead, .actor p.actor-b { color: var(--tinta); }
+
+/* Botón para salir al inicio del prototipo */
+.pb-btn.exit { margin-left: 8px; font-size: 14px; font-weight: 700; gap: 8px; color: var(--tinta); border-color: #cfc6dd; padding: 0 14px 0 12px; }
+.pb-btn.exit:hover { background: var(--morado-claro); border-color: var(--morado); color: var(--morado); }
+.how .mini.exit { color: var(--tinta); border-color: #cfc6dd; }
+@media (max-width: 760px) { .pb-btn.exit span { display: none; } .pb-btn.exit { padding: 0 9px; margin-left: 2px; } }
